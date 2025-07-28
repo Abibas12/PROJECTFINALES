@@ -10,74 +10,95 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
-  <body>
-    <header class="header">
-      <h1>OllieExpiredS</h1>
-      <h2>BEST SHOP KNOWN TO EARTH</h2>
-    </header>
-    <main>
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+<body>
+
+<header>
+  <h1>OllieExpiredS</h1>
+  <h2>BEST SHOP KNOWN TO EARTH</h2>
+</header>
+
+<main class="container my-5">
+  <!-- Карусель -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1590080875450-f02c68c6a2f3?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Luxury Sponge">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Артефакт для делікатного полірування поверхонь</h5>
+          <p>399 грн  Ручна робота. Ексклюзивна текстура для найніжнішого очищення ваших колекційних предметів.</p>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhISExMWFRUWGRgXGBcYGBcWFxgYGBYWFxgbGBoYHSggGBolHxYYIj0hJyksLi4wGh8zODM4QygtLisBCgoKDg0OGxAQGy8gICUtNS0tMzArNS0rNy8tLS0tKzU1Mi8tLS0uLS8vLy0tNS01LTItLS0tLS0vLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAgMBBAYFB//EAD0QAAEDAwIEBAMHAgQGAwAAAAEAAhEDITFBUQQSYXEFIoGRMqGxBhNCUsHR8CPhB2KCohQzQ3LS8WOSsv/EABkBAQADAQEAAAAAAAAAAAAAAAABAgMEBf/EADIRAQACAQIEAwUGBwAAAAAAAAABAgMRIQQSMVFBYaEiIzKBwRMzUnGR4TRCYqKx8PH/2gAMAwEAAhEDEQA/APuKIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIsExcrzOM8dpMxLz/lx7mxRatLW2rGr1EXgj7Tsm9N49ivU4LxCnVnkdcZabEeiL2w5KxrMNpERGQiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIquI4hjBzPcGjr+m68TjPtHkU233dtvAM+8dkaY8V7/DD3qlQNEuIA3NgvI43x9otTHMdzLR+/0XN8Txj3S57pgxJxuLCwGlhrlUPeSXC5EZsBe3vgK0Q78XBRG9t23X4yrVI+8fI/KJDQZO2dM+61HnlkCbxaP1PpnZZIOtpkzppgFRqTflta2TBwMkyL/RWdtYiNoYa48pItYTguIFoM579VKi+HBwMOmWx8UjYnoDPtKjUYS6TeRBF/wzjA17FWAxJgGIk7dycRdE+Gjr/B/FhVEOs+MbjcfsvTXzYVIcHNcWkTBvEj+97Quw8E8aFWGPgP00DvTR0aeo6UmHmcTwnJ7VOj2URFDhEREBERAREQEREBERAREQEREBFpcd4pSpTzOkj8Lbu9tPWFz/AB/2grPIbSAYNSSCSL2sDB1x6po3xcPfJ06Om4rjKdMS9wHTX2yuf4n7SucXCk2AIBcbuvsMCLWvnRc5WrudJkXGSQXTe5GTbIJJtor3uAI32OII7+slWiHoY+CpX4t5RrnndzFxe8jlLthtM4mPKPZVS5vNIBLnERcwHTy5OTH+UfrOxIEEFwGkxYa6G2ik0tF5vpzTk7YBdjqrOuNh7JIEGBOwBIgRb+GFCu6/K4wTZoALpEXOlr3nFlE1wXCXFxybwG8t8bEoCQDAyQTgEmBORF/RExE+KQbAh5MiASNbAAwLNm+4srGPk/Dygk6gm2trTb6qmi5zpkSczJM2tHTpKmWnXXHXAAMk9SiNCdjIGB+GZvJFyLo4Tj0wJANhnqPlZZfrzWnNzPT65WXETPKRe2h9s6H0QDRBI5hpjrvM7fWyy5uwtEiJ0AgiLz7HKrDhJ5vhiwuABe8jTHaFJgjkBBnPLscyI0nVQOo8D8b5oZUNz8LvzdD1+v195fOWkWFtZgTJHX+YXSeC+N3FOobYa8n2DvbKrMPN4nhdPao6JERQ88REQEREBERAREQEXm8X4zTbZvnds3Hq7HtJXgeI+LVakj4RsDY9Dve22VOjox8Ne/k6HxDxelSHmMnYX99l4PG+PVHTcU2jQHzXgC5EmZ0heRTHPJLbElsWxca20mFOmQZLhJB1EjHlLZEEC1952Voh6GPhcdOu8p1nk25pMXdqCZz7HpZalStFhI5habaYAjoe11dUqXDTfQweaDBiZyJA2yq+dxdJGhMDNo1nJxyx7KXVWNmKTpbLjHl80WE8sZgTBB9pspVBDc4GG6zEaZ/kIcEcpAkGYAnUxoB3M5slR4BDT+Le5JEWxsESg0TkB4Gdja4vkX1nCtqH0HuTbofpsq4AIxPcaaXOQFayTgjHXp650lCUadIDT5cu8ZxrdKbCYbkWuNBcxcXM2x1UntmoGSAb20wDifhic9ULwOYZIgkAEmTa98aSiNUxcztIEDEEZnNhkdVlwiDAE3k6dLfyyoa67bOJvgWBx2BiLT2GVN+QNLzriCDO/lPlRGjBcbHl3zFgImTMDsotMmZaAAZN/wCEdTi6zXkibGdzbPt6o/Amxn0BuAe90T4JMIkkZ+djYm8aoRPnggS60i8GLRprGVGQT5bzME83KNrx1WaoGt8n2j6boaJOsB0joIPrg+qqdO4AbmemCOovsrIiSATM4Gvc5/SFSNgLiJk3BFx3tJj91BEOg8E8bLCKdSSwmGu1ZOA7p9O2OqXzO8QNROsZm23c9F9LCrLy+NxVpaJjxZREUOEREQEREBcp4/4k57302mAy0THMbSc3jbourXGeJMAqVNy519QJkR7hTHV2cFWJvrLSbUicADa/YgaNzthQuW6WGmMC4jLenQqNwYM32ECb++OuCtgu8sY+YEYnvPzV3qtUsMRpm5/zCxjJ+VgrS08wMwAAREHOQbYt0wFmk3oL3xYDlFug/dYLATkuBhs4mCYsPr1CJ1QqMJGfKBMncz/NPVTps97XJJmJ/wByg8C8kC0yAI+LEwdT3wo03X8lhbPxD8v01JOZQVsoSIuALkkzOh7+6t4YybAQIEAEwRYiTpZYqMgABoPmxBbcmT2xMWwLqxrDIEgyZkG0b2GRbYInXZhwAGYEXvgDJJ/9Qp0rGDGhb1G8RIN/pdVtdAIAiQSZxn2xcjKrpsMnm5S7zb/DItBme9olEaLKLpsMWvEb2G4z+yh92ZmCGxa5kXySdDbsrQSMjeceg6qL3Oki+g0GpJNjbfKJjqFgaSPNc6yBpnPv3Rr/AIXEgnAOAbCbTANlkN1IJGcan6j0WKwtMtxjIEkQI9fkiPzZDHHMW2uAZ29toR7QCInYAdTrsOp3VdaqM6EybAYvbr+yyymAcDa4mxkxfG6J0mB7i4wLEAjBsBGtr3weqsdTAMA9QcGYiB7Doq3G8OPWB1MZ6myprcUymIcRzSSQ20agxF++JUTOiYiZ6LTUIgX+VjBn6LVr8VTbMmIvbLhf1kblaT+Nq1AQzyt/ObDvP7fJaJr02OgA1anuAd4OO5MrCc/NPLijmn0Z5s+Hh9sk79o6vb8GJrV6IAIYXNu6ZdB5iB0jUDA1X1JfNfsHTfU4oPfljHOgYbPl2z5vrZfSlNYtHxTrPo8jist8lom9eXtHj8/MREV3MIiICIiAuQ8RH9R+pBJI3bJ+Yv8APouvXHeIn+q7Q8xjuDceog/+lS8a+XafNrim0TrTrHh37w05xgzg95+UadVUIsD5Rtaw2JiPaFbXpgtJBLRNxjkduIPw9OqiGGSLdMnS8K9L820xpMdXsYslMlOesoMvcnNxtf6qVNnkN8HJM9/1VchsXxAAs0A/zS+FkQYgdCLjEakTP91o1ndiswaC9okX7icQbzbRYJzA+GwuYE3Mk2iwuPdKLCObJk3sANTeR3+az9y2xgzuZJ/XfqiVHE8QHA8gLhf2mDHKCdNAVscswGg2tmw0uDcE9dYUXuhwadMiZHQ/3OFXTcABYhsiHHrgyZ3yidNtljnS2+oIvvqbdlU+reS0+kkRqcXnb5qVOSJaGxkW1uO3soNaOUB0ucTzWMC1zOuvwonSFlFs5B0jWBm0WItgKT2wA03g4je3p6rM5HfXcanZYptJxvBNxYWMR6R9UVZFfzEG0tsLAbiQbk5wqeaSAci8XiLwMYucE/uawWE7CZvadckxotfieMYw3JkSAOaT0m8RA/EomYjqtFey5jSXHm+onHw9AP5ZQrcY1hkuiABBznQaZN159biKrwcU2WubTtoCfl6rQqcTTYYDTUdkAi3fltGt3QsPtptOmKOafRhn4rBg2yW37RvLePG1Kg8g5WYLicjv+w9VqEsbM/1X2MRYG94ye7j6qmo97zzPdA2BuO5wPl3UhR5W5bTb1yd4GfW3qsr1rH31uafww57Z+Iy15tsNO8/ExVqvcZe7lGzc9unYX7o+kGt8x+6b1u472/Uws8MalRzWcNSLnnDol0YkAWa3rYdV13gX+HlxU4t5cc8jT/8Ap/6N91ry5LRpPsV7R1/ZxVz48X8PXWfxW6/KG3/hrSltaoGlrJDGzkxJcT7t7LtlXw9BtNoYxoa0WAFgFYrxWKxpDntabTradZERFKBERAREQFz/ANo+Dv8AeQeV0B8ZaR8Lx9PZdAoVaYcC0iQRBUTEWjSehvG8bS4otcDf4ovHwvadev8AB2qNOOXl+E4OY3aT9Fv8Vwppu+7cetNx+h73Wl94LyDyuMPbjlduNiD/ADKy0tr/AFR084dWLNNJnLWNv5o+sKqmIABjPQdPmIC16rj8MSMajcDHppZbNajeDe1nR8QBt64VDWkxzHMk31Okaf2W9LxeusPYpaJrrG8J/dga3JvpmYv79UfIkgeYuj0gX+ai8+SRrMAES44tNhAsq6lw6wJdmLDGc5/srraSw9kAfCRBtN9NJxJBxaFIknm5ieXEDaBa/wBQsNl0iz7idLH4jMXnZWiLNA9iP4ETqgC4m5AzEGNRYyJ0jGhWKAPM4yOpkyCbdpAWWuuYyYJMQDkn1t3WvxfHsY2HZI1zfXED3iyiZiN5TpM7QvFSCeUSPh1mRrJtFxj9FRxfGNaIcZjInTd2oxqQtCpxNapcRSYJHMbEDXY/RaNWpSZYA1HZvi+zf1Puuf7ebzy4o5p9GGfiMHD/AHk79o3luv4x77tApsP4piw21PpHdaX/ABNKmfIC9/5jc3/KLAdzHcqiqHv81Q8rRpN/cY9B6qdKlbyjlb+d1h6bm/XuqXpSu+e2s9ocdsnFcREzHuqd56oVud55nuIG03A72gdo7qylw/KAQAxu516gC5ttHco2swECm01akwCRN+jRr7ldH4T9hK9cipxTyxv5BBeR10b6z2C01y3jSPYr6uWuTBg/h681vxW6fLxlzVKuXODKFM1HnBIk/wCloH6d11fgv+H73kVOLeRryAgu9TcN9JPULuPCvCKHDt5aNMN3OXHu43K3lelKY/gj5+Lnva2S3Nknmnz+keDV8P8AD6VBvJSY1g6ZPUnLj1K2kRSgREQEREBERAREQEREGp4nwLazC050OxXJVAQ4hw/qN+Nv52jUR+KPeOy7heV434Z94A9lqjbg7xoVFq80adJ8J7Jre1Lc1f8AsdnMsLYAN2Ey135Tp9Y+WyqrMkkEAOETGoFwQdjv+yuIBDjy3/6lP6kD+bqpzsMcYn/l1Ohy138/VZ6zrN4j2o+KPrDrwZ64dJj7uf7Z7T5KHhjQIAERA95jUlWUKQa0NBkE3iPWLKjiH8hh8t6/E3ax2jRUv8VptEcw7C5jof7rSubHaNYmHtRSbRtu3QQPLOCcYieg7WWrXqtabm067aC18iVpf8ZUf8FOOrrD549itOvUY34j947HKJ5ekxd306Kk5+aeXHHNPoxzZ8PDxrkt8ustmtxrnkinMC5eTEZycAdBfstN9WmzP9R51Ikf6W5Pc+6rq1XvyeVo0sPbRvzUaHDW8gnd7iI9XHJtpPoqZKVr7XEW+Uf7u5JzcTxEe7j7OneeqNatUeZceVvz9IsPS/VYoUiBLRAmS9xgehMk/PusVuIpt/8Akft+AdYJv3cey9rwr7K8ZxZa+ofuqd7uyRpytsT/ALR1KvrlvGlfYr6uSuTh8E+5jnt+Ken7vDFem2A0feOkAT8IN8N3uMmdl0nhf2M4riSH13Gkw3gjzkdG6esdiu38D+zPDcKAWMl4tzuu700aO0L2VamOmPesb956sMuS+Wdck83+P0eZ4N4Bw/CiKVMAxBebvProOggdF6aIrKCIiAiIgIiICIiAiIgIiICIiAiIg8Pxzwok/fUrVBkfmH7rm6jQWkgSz8TdWHX066fT6AvA8a8GcT97Qs/8TdHf3UWrNtJidLR0n6T5LY8k45mYjWJ6x3/dyDq1VoP3budv5TYwbm9/nHdeVX46pf8Apx2FP/z/AEXrVjTJ5TzUnajIJ/7TjGnVedXY0f8AVBH/AGvwM5Nlja9dfe4d/KNW1cfCWjWmecflM6NKo+s/4nADbXPb9CpMoZgAkZJuBa/M4/zopVq1JpPxPdsTA3w39bLY8N8H4vjI5G8lMfi+Fg6AjP8Apk9VeLZbxpWOSvr+iaX4XDvhiclu89GhXq02m/8AUdtcMF9Zu4dTZej4X9nuL4yHR93S0cfK2P8AKBd3p/8AZdv4F9iuHoQ5w+9fmXDyg7hu/UyV0ymmKmOdY3nvPVjly5M0+9nXy6V/Rz/gP2Q4bhocG/eVBfncJg7tGG989V0CItJnXqoIiKAREQEREBERAREQEREBERAREQEREBERAREQeZ4r4HRr/G2D+YR8wbFcxU/w8BP/ADW8un9K4/3R9F3SK0XtHST84cz4X9iOGpQXj70i4DgAwf6BY+srpWiLCwCyiiZmeqdRERQgREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREH//Z" class="d-block w-100" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Артефакт для делікатного полірування поверхонь</h5>
-              <p>399 грн  Ручна робота. Ексклюзивна текстура для найніжнішого очищення ваших колекційних предметів.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.prom.ua/4329864954_w600_h600_4329864954.jpg" class="d-block w-100" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Кліпса для організації простору</h5>
-              <p>Ціна: 249 грн за 1 шт.     Опис: «Мінімалізм, що тримає ваш світ у гармонії».</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="Third slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Лімітована серія інструменту для дегустацій</h5>
-              <p>Ціна: 499 грн.           Опис: «Ергономічний дизайн для гастрономічних гурманів».</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Декоративне дзеркало в стилі Hi-Tech</h5>
-              <p>Ціна: 899 грн.      Опис: «Відблиски майбутнього у вашому домі»</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="" class="d-block w-100" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Ємність для структурованої рідини</h5>
-              <p>Ціна: 699 грн.          Опис: «Прозорість – новий тренд у світі інтер’єрів»</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </main>
-    <footer>
-      <p class="link">
-        <a href="https://www.youtube.com/@whythecooldudeishere" target="_blank">https://www.youtube.com/@whythecooldudeishere</a>
-      </p>
-    </footer>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-  </body>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1601582589424-92ab7f0408ed?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Luxury Clip">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Кліпса для організації простору</h5>
+          <p>249 грн за 1 шт. Мінімалізм, що тримає ваш світ у гармонії.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Luxury Spoon">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Лімітована серія інструменту для дегустацій</h5>
+          <p>499 грн. Ергономічний дизайн для гастрономічних гурманів.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1521575107034-c4e065f39ff1?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Luxury CD Mirror">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Декоративне дзеркало в стилі Hi-Tech</h5>
+          <p>899 грн. Відблиски майбутнього у вашому домі.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1612831664281-c5b3b6f4b8f6?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Luxury Jar">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ємність для структурованої рідини</h5>
+          <p>699 грн. Прозорість – новий тренд у світі інтер’єрів.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  
+  <section class="price-list">
+    <h3>Luxury Collection 2025</h3>
+    <ul>
+      <li>«Свічі для моментального вогню» <span class="price">1 299 грн</span></li>
+      <li>«Текстильний девайс для детоксикації простору» <span class="price">2 499 грн</span></li>
+      <li>«Система для вертикального збереження кутюр» <span class="price">999 грн</span></li>
+      <li>«Паперовий медіа-ретро гайд» <span class="price">3 499 грн</span></li>
+      <li>«Транслюцентний полімер для креативних інсталяцій» <span class="price">1 799 грн</span></li>
+      <li>«Сталевий елемент конструктивної естетики» <span class="price">899 грн</span></li>
+      <li>«Тактильний переносник артефактів» <span class="price">2 299 грн</span></li>
+      <li>«Мікроінструмент для індивідуального догляду» <span class="price">1 199 грн</span></li>
+      <li>«Монофутляр для комфортного пересування» <span class="price">3 999 грн</span></li>
+      <li>«Мініатюрний об’єкт кріпильної естетики» <span class="price">1 599 грн</span></li>
+      <li>«Циліндр для креативних інтеракцій» <span class="price">2 899 грн</span></li>
+      <li>«Джерело вінтажної енергії» <span class="price">4 499 грн</span></li>
+      <li>«Мікрооб’єкт функціонального дизайну» <span class="price">999 грн</span></li>
+      <li>«Ароматний артефакт у стані редукції» <span class="price">3 299 грн</span></li>
+      <li>«Натуральний інструмент для просторового декору» <span class="price">7 899 грн</span></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p><a href="https://www.youtube.com/@whythecooldudeishere" target="_blank">Ми на YouTube</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
 </html>
